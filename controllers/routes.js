@@ -46,8 +46,9 @@ router.post("/", (req, res) => {
       return res.status(500).json({ error: "Cannot read file" });
     }
     const posts = JSON.parse(data);
+    const maxId = posts.reduce((max, p) => p.post_id > max ? p.post_id : max, 0);
     const newPost = {
-      post_id: posts.length + 1,
+      post_id: maxId + 1,
       title: req.body.title,
       author: req.body.author,
       body: req.body.body,
@@ -107,7 +108,7 @@ router.delete("/:id", (req, res) => {
       if (err) {
         return res.status(500).json({ error: "Cannot write to file" });
       }
-      res.status(201).send({ message: "Post deleted successfully" });
+      res.status(201).json({ message: "Post deleted successfully" });
     });
   });
 });
