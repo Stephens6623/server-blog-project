@@ -1,0 +1,30 @@
+{
+  "name": "server-blog-project",
+  "version": "1.0.0",
+  "description": "In this project, you will create a backend of a blog application, utilizing Model View Controller architecture.",
+  "main": "app.js",
+  "type":"module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stephens6623/server-blog-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stephens6623/server-blog-project/issues"
+  },
+  "homepage": "https://github.com/Stephens6623/server-blog-project#readme",
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
