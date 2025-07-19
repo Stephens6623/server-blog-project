@@ -1,4 +1,4 @@
-//fetching data from the api/blog endpoint
+// Fetching data from the api/blog endpoint
 fetch("/api/blog")
   .then((response) => response.json())
   .then((data) => {
