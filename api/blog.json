@@ -10,5 +10,11 @@
     "title": "second blog post.",
     "author": "Stephen Spargo",
     "body": "I hope this works"
+  },
+  {
+    "post_id": 3,
+    "title": "third post",
+    "author": "Stephen",
+    "body": "hoping it works again"
   }
 ]
